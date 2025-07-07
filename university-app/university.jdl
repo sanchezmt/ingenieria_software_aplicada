@@ -1,0 +1,59 @@
+application {
+  config {
+    baseName universityApp,
+    applicationType monolith,
+    authenticationType jwt,
+    packageName com.ar.edu.um.mtsanchez,
+    cacheProvider no,
+    buildTool maven,
+    devDatabaseType mariadb,
+    prodDatabaseType mariadb,
+    clientFramework react,
+    enableSwaggerCodegen true,
+    nativeLanguage es,
+    languages [es, en],
+    testFrameworks [cypress]
+  }
+  entities *
+}
+
+entity Student {
+  firstName String required minlength(2) maxlength(100)
+  lastName String required minlength(2) maxlength(100)
+  email String required unique maxlength(100)
+  enrollmentDate LocalDate required
+}
+
+entity Professor {
+  firstName String required minlength(2) maxlength(100)
+  lastName String required minlength(2) maxlength(100)
+  email String required unique maxlength(100)
+  hireDate LocalDate required
+}
+
+entity Course {
+  title String required minlength(2) maxlength(100)
+  description String maxlength(500)
+  credits Integer required min(1) max(10)
+}
+
+entity Enrollment {
+  enrollmentDate LocalDate required
+  grade Float min(0) max(10)
+}
+
+relationship ManyToOne {
+  Course{professor(firstName)} to Professor
+}
+
+relationship ManyToOne {
+  Enrollment{student(firstName)} to Student
+}
+
+relationship ManyToOne {
+  Enrollment{course(title)} to Course
+}
+
+paginate Student, Professor, Course, Enrollment with pagination
+service all with serviceImpl
+dto * with mapstruct

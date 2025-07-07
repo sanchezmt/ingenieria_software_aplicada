@@ -1,0 +1,41 @@
+{
+  "annotations": {
+    "changelogDate": "20250707203211"
+  },
+  "applications": ["universityApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "enrollmentDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "grade",
+      "fieldType": "Float",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "10",
+      "fieldValidateRulesMin": "0"
+    }
+  ],
+  "name": "Enrollment",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "firstName",
+      "otherEntityName": "student",
+      "relationshipName": "student",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "title",
+      "otherEntityName": "course",
+      "relationshipName": "course",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

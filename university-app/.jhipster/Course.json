@@ -1,0 +1,42 @@
+{
+  "annotations": {
+    "changelogDate": "20250707203111"
+  },
+  "applications": ["universityApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "100",
+      "fieldValidateRulesMinlength": "2"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "credits",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "10",
+      "fieldValidateRulesMin": "1"
+    }
+  ],
+  "name": "Course",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "firstName",
+      "otherEntityName": "professor",
+      "relationshipName": "professor",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

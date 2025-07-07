@@ -1,0 +1,27 @@
+{
+  "universityApp": {
+    "professor": {
+      "home": {
+        "title": "Professors",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Professor",
+        "createOrEditLabel": "Crear o editar Professor",
+        "notFound": "Ningún Professors encontrado"
+      },
+      "created": "Un nuevo Professor ha sido creado con el identificador {{ param }}",
+      "updated": "Un Professor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Professor ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Professor {{ id }}?"
+      },
+      "detail": {
+        "title": "Professor"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "hireDate": "Hire Date"
+    }
+  }
+}

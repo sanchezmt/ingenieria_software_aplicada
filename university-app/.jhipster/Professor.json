@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20250707203011"
+  },
+  "applications": ["universityApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "100",
+      "fieldValidateRulesMinlength": "2"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "100",
+      "fieldValidateRulesMinlength": "2"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "hireDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Professor",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

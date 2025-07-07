@@ -1,0 +1,23 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "universityApp",
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "react",
+    "devDatabaseType": "mariadb",
+    "enableSwaggerCodegen": true,
+    "entities": ["Student", "Professor", "Course", "Enrollment"],
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "Mjg3NTcwNGFiZWI4NDQwYmQ5Yjg1ZWU0MDA5MjNmMzEzMzUwYjhmZmMyMzQxZTQxMzQyMmIyZGEzMzRmZjYzYTI5YWQxNTQ3OWFmY2U2ODdhMDJmZTljMDdjNTNhMWIxYjBmYzAxY2M3NTcxNDE3N2E4OTdjM2I4ZmM4MDFlMGY=",
+    "languages": ["es", "en"],
+    "lastLiquibaseTimestamp": 1751920331000,
+    "monorepository": true,
+    "nativeLanguage": "es",
+    "packageName": "com.ar.edu.um.mtsanchez",
+    "prodDatabaseType": "mariadb",
+    "skipCommitHook": true,
+    "testFrameworks": ["cypress"]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "universityApp": {
+    "enrollment": {
+      "home": {
+        "title": "Enrollments",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Enrollment",
+        "createOrEditLabel": "Crear o editar Enrollment",
+        "notFound": "Ningún Enrollments encontrado"
+      },
+      "created": "Un nuevo Enrollment ha sido creado con el identificador {{ param }}",
+      "updated": "Un Enrollment ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Enrollment ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Enrollment {{ id }}?"
+      },
+      "detail": {
+        "title": "Enrollment"
+      },
+      "id": "ID",
+      "enrollmentDate": "Enrollment Date",
+      "grade": "Grade",
+      "student": "Student",
+      "course": "Course"
+    }
+  }
+}
