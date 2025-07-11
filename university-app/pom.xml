@@ -318,7 +318,7 @@
                     </platforms>
                     </from>
                     <to>
-                    <image>agustinm28/ing-soft-aplicada-final:latest</image>
+                    <image>agniddrage/ing_soft_aplicada:latest</image>
                     <tags>
                         <tag>${project.version}</tag>
                         <tag>latest</tag>
